@@ -1,8 +1,22 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+:root {
+  --bg-1: rgb(38, 39, 88);
+  --bg-2: rgb(32, 21, 95);
+  --purple-lt: rgb(42, 45, 113);
+  --neon-pink: rgb(234, 51, 110);
+  --neon-pink-lt: rgb(239, 137, 247);
+  --neon-green-lt: rgb(211, 222, 105);
+  --neon-blue: rgb(71, 127, 173);
+  --neon-blue-lt: rgb(105, 224, 230);
+  --text: rgb(246, 250, 231);
 }
 
-a {
-  color: #00B7FF;
+* {
+  box-sizing: border-box;
+  font-size: medium;
 }
+
+body {
+  background-color: var(--bg-1);
+  color: var(--text);
+}
+
