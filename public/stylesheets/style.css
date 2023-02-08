@@ -79,7 +79,7 @@ body {
   height: 20%;
 }
 
-.shelf {
+.shelf-top {
   height: 20px;
   width: 40%;
   position: absolute;
@@ -89,6 +89,18 @@ body {
   left: 20px;
   border-radius: 5px;
 }
+
+.shelf-2-top {
+  height: 20px;
+  width: 40%;
+  position: absolute;
+  border: 1px solid rgb(151, 102, 56);
+  background-color: rgb(151, 102, 56);
+  bottom: 0;
+  left: 20px;
+  border-radius: 5px;
+}
+
 
 .window {
   position: absolute;
