@@ -58,6 +58,59 @@ body {
   background-color: var(--bg-1);
 }
 
+.container {
+  border: 1px solid white;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sec-1,
+.sec-2,
+.sec-3 {
+  border: 1px solid white;
+  height: 33%;
+  position: relative;
+}
+
+.shelf {
+  height: 20px;
+  width: 40%;
+  position: absolute;
+  border: 1px solid black;
+  background-color: black;
+  top: 50%;
+  left: 20px;
+}
+
+.window {
+  position: absolute;
+  right: 10px;
+  top:10px;
+  height: 150%;
+  width: 50%;
+  border: 5px solid black;
+}
+
+.table-top {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 30px;
+  background-color: rgb(182, 140, 83);
+}
+
+.table-btm {
+  position: absolute;
+  height: 20px;
+  width: 78%;
+  background-color: rgb(151, 102, 56);
+  top:30px;
+  left: 11%;
+}
+
+
 /* NAVBAR */
 
 /* .wrapper{
