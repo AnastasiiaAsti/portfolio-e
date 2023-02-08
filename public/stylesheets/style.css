@@ -883,3 +883,43 @@ input[type="checkbox"]{
   transition-delay: 0.6s;
   transform: translateX(-100px);
 } */
+
+/* MEDIA QUERIES */
+
+
+/* @media screen 
+  and (min-device-width: 2200px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .container {
+      width: 40vw;
+      height: 50vh;
+    }
+}
+
+@media screen 
+  and (min-device-width: 1400px) 
+  and (max-device-width: 2200px)
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .container {
+      width: 60vw;
+      height: 80vh;
+    }
+}
+
+@media screen 
+  and (min-device-width: 1100px) 
+  and (max-device-width: 1399px)
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .container {
+      width: 100vw;
+      height: 100vh;
+    } 
+}
+
+
+
+/* @media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+} */
