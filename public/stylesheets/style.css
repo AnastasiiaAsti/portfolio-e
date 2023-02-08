@@ -92,12 +92,44 @@ body {
 
 .window {
   position: absolute;
+  display: flex;
+  align-items: flex-end;
   right: 10px;
   top:10px;
   height: 150%;
   width: 50%;
   border: 5px solid black;
   background-color: rgb(0, 0, 47);
+}
+
+.building-1 {
+  background-color: black;
+  height: 55%;
+  width: 20%;
+}
+
+.building-2 {
+  background-color: black;
+  height: 20%;
+  width: 20%;
+}
+
+.building-3 {
+  background-color: black;
+  height: 50%;
+  width: 20%;
+}
+
+.building-4 {
+  background-color: black;
+  height: 80%;
+  width: 20%;
+}
+
+.building-5 {
+  background-color: black;
+  height: 65%;
+  width: 20%;
 }
 
 .laptop {
