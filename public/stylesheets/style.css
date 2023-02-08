@@ -340,7 +340,8 @@ body {
   height: 100px;
   position: absolute;
   top: 190px;
-  left: 300px;
+  left: 290px;
+  transform: rotate(20deg);
 }
 
 .book-3 {
