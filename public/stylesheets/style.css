@@ -1,22 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+
 :root {
+  /* #262758 */
   --bg-1: rgb(38, 39, 88);
+  /* #20155F */
   --bg-2: rgb(32, 21, 95);
+  /* #2A2D71 */
   --purple-lt: rgb(42, 45, 113);
+  /* #EA336E */
   --neon-pink: rgb(234, 51, 110);
+  /*  #EF89F7*/
   --neon-pink-lt: rgb(239, 137, 247);
+  /* #D3DE69 */
   --neon-green-lt: rgb(211, 222, 105);
+  /* #477FAD */
   --neon-blue: rgb(71, 127, 173);
+  /* #69E0E6 */
   --neon-blue-lt: rgb(105, 224, 230);
+  /* #F6FAE7 */
   --text: rgb(246, 250, 231);
 }
 
+/* .bedas {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.lucky {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.monoton {
+  font-family: 'Monoton', cursive;
+}
+
+.abril {
+  font-family: 'Abril Fatface', cursive;
+}
+
+.bangers {
+  font-family: 'Bangers', cursive;
+}
+
+.lobster {
+  font-family: 'Lobster', cursive;
+} */
+
 * {
   box-sizing: border-box;
-  font-size: medium;
+  font-size: 1.4rem;
+  font-family: 'Belleza', sans-serif;
 }
 
 body {
-  background-color: var(--bg-1);
+  height: 100vh;
+  background: rgb(147,32,69);
+  background: -moz-linear-gradient(0deg, rgba(147,32,69,1) 0%, rgba(32,21,95,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(147,32,69,1) 0%, rgba(32,21,95,1) 100%);
+  background: linear-gradient(0deg, rgba(147,32,69,1) 0%, rgba(32,21,95,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#932045",endColorstr="#20155f",GradientType=1);
   color: var(--text);
 }
 
+/* NAVBAR */
+
+.wrapper{
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 100%;
+  background: #00000068;
+  transition: all 0.6s ease-in-out;
+}
+#active:checked ~ .wrapper{
+  right:0;
+}
+.menu-btn{
+  position: absolute;
+  z-index: 2;
+  right: 20px;
+  /*left: 20px; */
+  top: 20px;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  
+}
+.menu-btn span,
+.menu-btn:before,
+.menu-btn:after{
+	content: "";
+	position: absolute;
+	top: calc(50% - 1px);
+	left: 30%;
+	width: 40%;
+	border-bottom: 2px solid var(--text);
+	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.menu-btn:before{
+  transform: translateY(-8px);
+}
+.menu-btn:after{
+  transform: translateY(8px);
+}
+
+.close {
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	transition: background .5s;
+}
+
+/* closing animation */
+#active:checked + .menu-btn span {
+	transform: scaleX(0);
+}
+#active:checked + .menu-btn:before {
+	transform: rotate(45deg);
+  border-color: #fff;
+}
+#active:checked + .menu-btn:after {
+	transform: rotate(-45deg);
+  border-color: #fff;
+}
+.wrapper ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+.wrapper ul li{
+  height: 10%;
+  margin: 15px 0;
+}
+.wrapper ul li a{
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 5px 30px;
+  color: #fff;
+  border-radius: 50px;
+  position: absolute;
+  line-height: 50px;
+  margin: 5px 30px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.wrapper ul li a:hover{
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+
+}
+input[type="checkbox"]{
+  display: none;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  text-align: center;
+  width: 100%;
+  color: #202020;
+}
+.content .title{
+  font-size: 40px;
+  font-weight: 700;
+}
+.content p{
+  font-size: 35px;
+  font-weight: 600;
+}
+
+#active:checked ~ .wrapper ul li a{
+  opacity: 1;
+}
+.wrapper ul li a{
+  transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translateX(100px);
+}
+#active:checked ~ .wrapper ul li a{
+	transform: none;
+	transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1);
+  transition-delay: 0.6s;
+  transform: translateX(-100px);
+}
