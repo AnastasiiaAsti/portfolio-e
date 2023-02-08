@@ -83,8 +83,8 @@ body {
   height: 20px;
   width: 40%;
   position: absolute;
-  border: 1px solid black;
-  background-color: black;
+  border: 1px solid rgb(151, 102, 56);
+  background-color: rgb(151, 102, 56);
   top: 50%;
   left: 20px;
   border-radius: 5px;
@@ -98,8 +98,12 @@ body {
   top:10px;
   height: 150%;
   width: 50%;
-  border: 5px solid black;
-  background-color: rgb(0, 0, 47);
+  border: 20px solid rgb(151, 102, 56);
+  background: rgb(38,39,88);
+  background: -moz-linear-gradient(188deg, rgba(38,39,88,1) 0%, rgba(96,42,113,1) 50%, rgba(234,51,110,1) 100%);
+  background: -webkit-linear-gradient(188deg, rgba(38,39,88,1) 0%, rgba(96,42,113,1) 50%, rgba(234,51,110,1) 100%);
+  background: linear-gradient(188deg, rgba(38,39,88,1) 0%, rgba(96,42,113,1) 50%, rgba(234,51,110,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#262758",endColorstr="#ea336e",GradientType=1);
 }
 
 .building-1 {
@@ -173,6 +177,15 @@ body {
   left: 10%;
 }
 
+.tbl-leg {
+  position: absolute;
+  top: 50px;
+  left:10%;
+  width: 50px;
+  height: 82%;
+  background-color: rgb(151, 102, 56);
+}
+
 .btm-shelves{
   position: absolute;
   display: flex;
@@ -192,6 +205,8 @@ body {
   height: 70px;
   background-color: rgb(151, 102, 56);
 }
+
+
 
 
 
