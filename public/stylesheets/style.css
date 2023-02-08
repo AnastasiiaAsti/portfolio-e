@@ -1,11 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
-
-
 :root {
   /* #262758 */
   --bg-1: rgb(38, 39, 88);
-  /* #20155F */
-  --bg-2: rgb(32, 21, 95);
   /* #2A2D71 */
   --purple-lt: rgb(42, 45, 113);
   /* #EA336E */
@@ -20,36 +15,13 @@
   --neon-blue-lt: rgb(105, 224, 230);
   /* #F6FAE7 */
   --text: rgb(246, 250, 231);
+  --tbl: rgb(151, 102, 56);
+  --tbl-lt: rgb(182, 140, 83);
 }
-
-/* .bedas {
-  font-family: 'Bebas Neue', cursive;
-}
-
-.lucky {
-  font-family: 'Luckiest Guy', cursive;
-}
-
-.monoton {
-  font-family: 'Monoton', cursive;
-}
-
-.abril {
-  font-family: 'Abril Fatface', cursive;
-}
-
-.bangers {
-  font-family: 'Bangers', cursive;
-}
-
-.lobster {
-  font-family: 'Lobster', cursive;
-} */
 
 * {
   box-sizing: border-box;
   font-size: 1.4rem;
-  font-family: 'Belleza', sans-serif;
 }
 
 body {
@@ -64,6 +36,7 @@ body {
   flex-direction: column;
 }
 
+/* 3 main sections */
 .sec-1,
 .sec-2
 {
@@ -76,7 +49,7 @@ body {
   height: 20%;
 }
 
-/* plant */
+/* PLANT */
 
 .wrap {
   position: absolute;
@@ -277,12 +250,14 @@ body {
 	}
 }
 
+/* Top left shelves */
+
 .shelf-top {
   height: 20px;
   width: 40%;
   position: absolute;
-  border: 1px solid rgb(151, 102, 56);
-  background-color: rgb(151, 102, 56);
+  border: 1px solid var(--tbl);
+  background-color: var(--tbl);
   top: 50%;
   left: 20px;
   border-radius: 5px;
@@ -292,13 +267,14 @@ body {
   height: 20px;
   width: 40%;
   position: absolute;
-  border: 1px solid rgb(151, 102, 56);
-  background-color: rgb(151, 102, 56);
+  border: 1px solid var(--tbl);
+  background-color: var(--tbl);
   bottom: 0;
   left: 20px;
   border-radius: 5px;
 }
 
+/* WINDOW */
 
 .window {
   position: absolute;
@@ -308,7 +284,7 @@ body {
   top:10px;
   height: 150%;
   width: 50%;
-  border: 20px solid rgb(151, 102, 56);
+  border: 20px solid var(--tbl);
   background: rgb(38,39,88);
   background: -moz-linear-gradient(188deg, rgba(38,39,88,1) 0%, rgba(96,42,113,1) 50%, rgba(234,51,110,1) 100%);
   background: -webkit-linear-gradient(188deg, rgba(38,39,88,1) 0%, rgba(96,42,113,1) 50%, rgba(234,51,110,1) 100%);
@@ -331,7 +307,7 @@ body {
 .dot-12 {
   width: 8px;
   height: 8px;
-  background-color: #fff;
+  background-color: #faf4d0;
   /* -webkit-animation-name: flicker;
           animation-name: flicker;
   -webkit-animation-duration: 8s;
@@ -425,6 +401,8 @@ body {
     }
   } */
 
+  /* BUILDING WINDOWS */
+
 .dot {
   position: absolute;
   right: 20px;
@@ -492,7 +470,7 @@ body {
   bottom: 120px;
 }
 
-
+/* buildings */
 
 .building-1 {
   background-color: black;
@@ -524,6 +502,8 @@ body {
   width: 20%;
 }
 
+/* LAPTOP */
+
 .laptop {
   position: absolute;
   bottom:20px;
@@ -546,6 +526,8 @@ body {
   background-color: white;
   border-radius: 5px;
 }
+
+/* TABLE */
 
 .table-top {
   position: absolute;
@@ -594,7 +576,7 @@ body {
   background-color: rgb(151, 102, 56);
 }
 
-/* cuo */
+/* CUP */
 
 /*cup animation*/
 
@@ -734,155 +716,9 @@ body {
   width: 150px;
   border-radius: 0 0 100px 100px;
   background-color: #F9F9F9;
-  /* margin-top: -1px;
-  margin-left: 5px; */
   z-index: 2;
 }
 
-
-/* NAVBAR */
-
-/* .wrapper{
-  position: fixed;
-  top: 0;
-  right: -100%;
-  height: 100%;
-  width: 100%;
-  background: #00000068;
-  transition: all 0.6s ease-in-out;
-}
-#active:checked ~ .wrapper{
-  right:0;
-}
-.menu-btn{
-  position: absolute;
-  z-index: 2;
-  right: 20px;
-  top: 20px;
-  height: 80px;
-  width: 80px;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
-  font-size: 40px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  
-}
-.menu-btn span,
-.menu-btn:before,
-.menu-btn:after{
-	content: "";
-	position: absolute;
-	top: calc(50% - 1px);
-	left: 30%;
-	width: 40%;
-	border-bottom: 2px solid var(--text);
-	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-.menu-btn:before{
-  transform: translateY(-8px);
-}
-.menu-btn:after{
-  transform: translateY(8px);
-}
-
-.close {
-	z-index: 1;
-	width: 100%;
-	height: 100%;
-	pointer-events: none;
-	transition: background .5s;
-} */
-
-/* closing animation */
-/* #active:checked + .menu-btn span {
-	transform: scaleX(0);
-}
-#active:checked + .menu-btn:before {
-	transform: rotate(45deg);
-  border-color: #fff;
-}
-#active:checked + .menu-btn:after {
-	transform: rotate(-45deg);
-  border-color: #fff;
-}
-.wrapper ul{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 100%;
-  transform: translate(-50%, -50%);
-  list-style: none;
-  text-align: center;
-}
-.wrapper ul li{
-  height: 10%;
-  margin: 15px 0;
-}
-.wrapper ul li a{
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: 500;
-  padding: 5px 30px;
-  color: #fff;
-  border-radius: 50px;
-  position: absolute;
-  line-height: 50px;
-  margin: 5px 30px;
-  opacity: 0;
-  transition: all 0.3s ease;
-  transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.wrapper ul li a:hover{
-  color: #fff;
-  text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #0fa,
-    0 0 82px #0fa,
-    0 0 92px #0fa,
-    0 0 102px #0fa,
-    0 0 151px #0fa;
-
-}
-input[type="checkbox"]{
-  display: none;
-}
-.content{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  text-align: center;
-  width: 100%;
-  color: #202020;
-}
-.content .title{
-  font-size: 40px;
-  font-weight: 700;
-}
-.content p{
-  font-size: 35px;
-  font-weight: 600;
-}
-
-#active:checked ~ .wrapper ul li a{
-  opacity: 1;
-}
-.wrapper ul li a{
-  transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transform: translateX(100px);
-}
-#active:checked ~ .wrapper ul li a{
-	transform: none;
-	transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1);
-  transition-delay: 0.6s;
-  transform: translateX(-100px);
-} */
 
 /* MEDIA QUERIES */
 
