@@ -49,6 +49,10 @@ body {
   height: 20%;
 }
 
+/* BOOKS */
+
+
+
 /* PLANT */
 
 .wrap {
@@ -261,6 +265,7 @@ body {
   top: 50%;
   left: 20px;
   border-radius: 5px;
+  box-shadow: 0 24px 20px -6px black;
 }
 
 .shelf-2-top {
@@ -272,6 +277,8 @@ body {
   bottom: 0;
   left: 20px;
   border-radius: 5px;
+  box-shadow: 0 24px 20px -6px black;
+
 }
 
 /* WINDOW */
