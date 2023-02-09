@@ -939,12 +939,12 @@ a {
   color: black;
 }
 
-.one  { background: hsla(  0, 100%, 50%, 0.7); }
+/* .one  { background: hsla(  0, 100%, 50%, 0.7); }
 .two  { background: hsla( 60, 100%, 50%, 0.7); }
 .three   { background: hsla(120, 100%, 50%, 0.7); }
 .four  { background: hsla(180, 100%, 50%, 0.7); }
 .five   { background: hsla(240, 100%, 50%, 0.7); }
-.six{ background: hsla(300, 100%, 50%, 0.7); }
+.six{ background: hsla(300, 100%, 50%, 0.7); } */
 
 .one { 
   transform: rotateY(  0deg) translateZ(100px); 
