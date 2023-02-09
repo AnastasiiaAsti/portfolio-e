@@ -32,6 +32,11 @@ body {
   background-color: var(--bg-1);
 }
 
+a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
 .container {
   height: 100vh;
   display: flex;
@@ -334,6 +339,22 @@ body {
   left: 330px;
 }
 
+.book-1 .stripe-1 {
+  background-color: var(--tbl);
+  position: absolute;
+  width: 45px;
+  height: 10px;
+  top: 10px;
+}
+
+.book-1 .stripe-2 {
+  background-color: var(--tbl);
+  position: absolute;
+  width: 45px;
+  height: 10px;
+  bottom: 10px;
+} 
+
 .book-2 {
   background-color: #25a037;
   width: 25px;
@@ -372,6 +393,9 @@ body {
   position: absolute;
   top: 8px;
   left: 60px;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 5px;
 }
 
 .book-4 {
