@@ -365,6 +365,22 @@ a {
   transform: rotate(20deg);
 }
 
+.book-2 .stripe-1 {
+  background-color: #1a7227;
+  position: absolute;
+  width: 25px;
+  height: 10px;
+  top: 10px;
+}
+
+.book-2 .stripe-2 {
+  background-color: #1a7227;
+  position: absolute;
+  width: 25px;
+  height: 10px;
+  bottom: 10px;
+}
+
 .book-3 {
   background-color: #4417ad;
   width: 195px;
