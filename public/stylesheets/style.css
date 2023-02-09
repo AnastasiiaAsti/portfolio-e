@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Condiment&display=swap');
 
 :root {
-  /* #262758 */
-  --bg-1: rgb(38, 39, 88);
-  /* #2A2D71 */
-  --purple-lt: rgb(42, 45, 113);
+  --bg-1: #262758;
+  --purple-lt: #2A2D71;
   --text: rgb(246, 250, 231);
   --tbl: rgb(151, 102, 56);
   --tbl-lt: rgb(182, 140, 83);
