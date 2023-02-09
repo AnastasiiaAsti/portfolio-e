@@ -888,56 +888,6 @@ a {
   border-radius: 5px;
 }
 
-/* LAMP */
-
-.lamp {
-  height: 100%;
-  width: 20%;
-  position: absolute;
-  right: 60px;
-}
-
-.stand {
-  height: 20px;
-  width: 120px;
-  border: 1px solid var(--text);
-  background-color: black;
-  position: absolute;
-  bottom: 0;
-  left: 60px;
-  z-index: 1;
-}
-
-.stick {
-  height: 450px;
-  width: 10px;
-  background-color: black;
-  border: 1px solid var(--text);
-  position: absolute;
-  bottom: 0;
-  left: 115px;
-}
-
-.lamp-top {
-  height: 150px;
-  width: 200px;
-  background-color: var(--text);
-  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-  position: absolute;
-  top: 0;
-  left: 25px;
-}
-
-/* .lamp-light {
-  background-color: #fffbb687;
-  height: 720px;
-  width: 600px;
-  position: absolute;
-  top: 150px;
-  right: -30px;
-} */
-
 /* TABLE */
 
 .table-top {
@@ -1101,6 +1051,7 @@ a {
   margin-bottom: 5px;
   position: absolute;
   bottom: 0;
+  right: 100px;
 }
 
 #cup-body {
@@ -1144,7 +1095,7 @@ a {
 #saucer {
   position: absolute;
   bottom: -5px;
-  right: 20px;
+  right: 15px;
   height: 15px;
   width: 150px;
   border-radius: 0 0 100px 100px;
