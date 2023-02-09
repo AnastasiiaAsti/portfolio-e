@@ -863,6 +863,124 @@ a {
   width: 20%;
 }
 
+/* LINKS in CUBE */
+
+.toy {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-cube-element {
+  width: 200px;
+  height: 200px;
+  margin: 80px;
+  perspective: 400px;
+}
+
+.cube {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-100px);
+  transition: transform 1s;
+}
+
+.cube.show-one {
+  transform: translateZ(-100px) rotateY(0deg); 
+}
+.cube.show-two { 
+  transform: translateZ(-100px) rotateY(-90deg); 
+}
+.cube.show-three { 
+  transform: translateZ(-100px) rotateY(-180deg); 
+}
+.cube.show-four { 
+  transform: translateZ(-100px) rotateY(90deg); 
+}
+.cube.show-five {
+  transform: translateZ(-100px) rotateX(-90deg); 
+}
+.cube.show-six { 
+  transform: translateZ(-100px) rotateX(90deg); 
+}
+
+.cube-face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 5px solid black;
+  line-height: 200px;
+  color: white;
+  text-align: center;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+
+.one i,
+.two i,
+.three i,
+.four i,
+.five i,
+.six i {
+  /* background: hsla( 60, 100%, 50%, 0.4); */
+  font-size: 70px;
+  color: black;
+}
+
+.one  { background: hsla(  0, 100%, 50%, 0.7); }
+.two  { background: hsla( 60, 100%, 50%, 0.7); }
+.three   { background: hsla(120, 100%, 50%, 0.7); }
+.four  { background: hsla(180, 100%, 50%, 0.7); }
+.five   { background: hsla(240, 100%, 50%, 0.7); }
+.six{ background: hsla(300, 100%, 50%, 0.7); }
+
+.one { 
+  transform: rotateY(  0deg) translateZ(100px); 
+}
+.two { 
+  transform: rotateY( 90deg) translateZ(100px); 
+}
+.three { 
+  transform: rotateY(180deg) translateZ(100px); 
+}
+.four { 
+  transform: rotateY(-90deg) translateZ(100px); 
+}
+.five { 
+  transform: rotateX( 90deg) translateZ(100px); 
+}
+.six{ 
+  transform: rotateX(-90deg) translateZ(100px); 
+}
+
+
+/* .floating { 
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }   
+} */
+
 /* LAPTOP */
 
 .laptop {
