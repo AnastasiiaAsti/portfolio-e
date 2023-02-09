@@ -10,7 +10,8 @@
   --green:#25a037;;
   --orange:#e1953e;
   --red: #e1443e;
-  --teal: rgb(87, 150, 142)
+  --teal: rgb(87, 150, 142);
+  --window: #faf4d0;
 }
 
 * {
@@ -111,7 +112,7 @@ a {
 	right:0;
 	height:50px;
   width:90px;
-	border-right: 20px solid #aad670;
+	border-right: 20px solid var(--green-lt);
 }
 
 .blade-left-s:after {
@@ -120,7 +121,7 @@ a {
 	height:120px;
 	width:90px;
 	transform: rotateZ(15deg);
-	border-right: 18px solid #abe07a;
+	border-right: 18px solid var(--green-lt);
 }
 
 .blade-left-l {
@@ -323,7 +324,7 @@ a {
 /* BOOKS */
 
 .book-1 {
-  background-color: #e1953e;
+  background-color: var(--orange);
   width: 45px;
   height: 180px;
   position: absolute;
@@ -407,7 +408,7 @@ a {
 }
 
 .book-4 {
-  background-color: #e1953e;
+  background-color: var(--orange);
   width: 190px;
   height: 50px;
   position: absolute;
@@ -547,7 +548,7 @@ a {
 
 
 .lower-books .book-3 {
-  background-color: #25a037;
+  background-color: var(--green);
   width: 195px;
   height: 50px;
   position: absolute;
@@ -555,7 +556,7 @@ a {
   left: 320px;
 }
 .lower-books .book-4 {
-  background-color: #e1953e;
+  background-color: var(--orange);
   width: 190px;
   height: 50px;
   position: absolute;
@@ -563,7 +564,7 @@ a {
   left: 300px;
 }
 .lower-books .book-5 {
-  background-color: #e1443e;
+  background-color: var(--red);
   width: 190px;
   height: 50px;
   position: absolute;
@@ -637,7 +638,7 @@ a {
 .dot-12 {
   width: 8px;
   height: 8px;
-  background-color: #faf4d0;
+  background-color: var(--window);
   /* -webkit-animation-name: flicker;
           animation-name: flicker;
   -webkit-animation-duration: 8s;
@@ -865,16 +866,12 @@ a {
 .toy {
   position: absolute;
   bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  left: 100px;
 }
 
 .links-cube-element {
-  width: 200px;
-  height: 200px;
-  margin: 80px;
+  width: 100px;
+  height: 100px;
   perspective: 400px;
 }
 
@@ -883,35 +880,29 @@ a {
   height: 200px;
   position: relative;
   transform-style: preserve-3d;
-  transform: translateZ(-100px);
+  transform: translateZ(-50px);
   transition: transform 1s;
 }
 
 .cube.show-one {
-  transform: translateZ(-100px) rotateY(0deg); 
+  transform: translateZ(-50px) rotateY(0deg); 
 }
 .cube.show-two { 
-  transform: translateZ(-100px) rotateY(-90deg); 
+  transform: translateZ(-50px) rotateY(-90deg); 
 }
 .cube.show-three { 
-  transform: translateZ(-100px) rotateY(-180deg); 
+  transform: translateZ(-50px) rotateY(-180deg); 
 }
 .cube.show-four { 
-  transform: translateZ(-100px) rotateY(90deg); 
-}
-.cube.show-five {
-  transform: translateZ(-100px) rotateX(-90deg); 
-}
-.cube.show-six { 
-  transform: translateZ(-100px) rotateX(90deg); 
+  transform: translateZ(-50px) rotateY(90deg); 
 }
 
 .cube-face {
   position: absolute;
-  width: 200px;
-  height: 200px;
-  border: 5px solid black;
-  line-height: 200px;
+  width: 100px;
+  height: 100px;
+  border: 3px solid black;
+  line-height: 100px;
   color: white;
   text-align: center;
 }
@@ -922,46 +913,34 @@ a {
 .four i,
 .five i,
 .six i {
-  font-size: 70px;
+  font-size: 60px;
   color: black;
 }
 
 .one { 
-  background: var(--red)
+  background: var(--teal)
 }
 .two { 
-  background:var(--green); 
+  background:var(--green-lt); 
 }
 .three { 
   background:var(--orange); 
 }
 .four {
-  background: var(--green-lt); 
-}
-.five { 
-  background: var(--teal); 
-}
-.six {
-  background: var(--orange); 
+  background: var(--red); 
 }
 
 .one { 
-  transform: rotateY(  0deg) translateZ(100px); 
+  transform: rotateY(0deg) translateZ(50px); 
 }
 .two { 
-  transform: rotateY( 90deg) translateZ(100px); 
+  transform: rotateY(90deg) translateZ(50px); 
 }
 .three { 
-  transform: rotateY(180deg) translateZ(100px); 
+  transform: rotateY(180deg) translateZ(50px); 
 }
 .four { 
-  transform: rotateY(-90deg) translateZ(100px); 
-}
-.five { 
-  transform: rotateX( 90deg) translateZ(100px); 
-}
-.six{ 
-  transform: rotateX(-90deg) translateZ(100px); 
+  transform: rotateY(-90deg) translateZ(50px);
 }
 
 
