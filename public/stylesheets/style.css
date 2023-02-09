@@ -551,6 +551,62 @@ a {
   height: 2px;
 }
 
+/* BOOKS */
+
+
+.lower-books .book-3 {
+  background-color: #25a037;
+  width: 195px;
+  height: 50px;
+  position: absolute;
+  top: 510px;
+  left: 320px;
+}
+.lower-books .book-4 {
+  background-color: #e1953e;
+  width: 190px;
+  height: 50px;
+  position: absolute;
+  top: 460px;
+  left: 300px;
+}
+.lower-books .book-5 {
+  background-color: #e1443e;
+  width: 190px;
+  height: 50px;
+  position: absolute;
+  top: 410px;
+  left: 330px;
+}
+
+
+.lower-books .book-3 .circle, 
+.lower-books .book-4 .circle,
+.lower-books .book-5 .circle {
+  background-color: var(--text);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  top: 12px;
+  left: 20px;
+}
+
+.lower-books .book-3 .link-wrapper, 
+.lower-books .book-4 .link-wrapper,
+.lower-books .book-5 .link-wrapper {
+  background-color: var(--text);
+  width: 120px;
+  height: 35px;
+  position: absolute;
+  top: 8px;
+  left: 60px;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+
 /* WINDOW */
 
 .window {
