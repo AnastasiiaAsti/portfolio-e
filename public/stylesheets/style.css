@@ -676,6 +676,43 @@ a {
   border-radius: 5px;
 }
 
+/* LAMP */
+
+.lamp {
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  right: 60px;
+}
+
+.stand {
+  height: 20px;
+  width: 120px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 60px;
+}
+
+.stick {
+  height: 450px;
+  width: 10px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 115px;
+}
+
+.lamp-top {
+  height: 150px;
+  width: 200px;
+  background-color: var(--text);
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  position: absolute;
+  top: 0;
+  left: 25px;
+}
 /* TABLE */
 
 .table-top {
