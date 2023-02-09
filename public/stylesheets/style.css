@@ -5,20 +5,14 @@
   --bg-1: rgb(38, 39, 88);
   /* #2A2D71 */
   --purple-lt: rgb(42, 45, 113);
-  /* #EA336E */
-  --neon-pink: rgb(234, 51, 110);
-  /*  #EF89F7*/
-  --neon-pink-lt: rgb(239, 137, 247);
-  /* #D3DE69 */
-  --neon-green-lt: rgb(211, 222, 105);
-  /* #477FAD */
-  --neon-blue: rgb(71, 127, 173);
-  /* #69E0E6 */
-  --neon-blue-lt: rgb(105, 224, 230);
-  /* #F6FAE7 */
   --text: rgb(246, 250, 231);
   --tbl: rgb(151, 102, 56);
   --tbl-lt: rgb(182, 140, 83);
+  --green-lt:#abe07a;
+  --green:#25a037;;
+  --orange:#e1953e;
+  --red: #e1443e;
+  --teal: rgb(87, 150, 142)
 }
 
 * {
@@ -618,11 +612,16 @@ a {
   height: 150%;
   width: 50%;
   border: 20px solid var(--tbl);
-  background: rgb(38,39,88);
+  background: rgb(156,102,41);
+  background: -moz-linear-gradient(0deg, rgba(156,102,41,1) 0%, rgba(34,35,97,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(156,102,41,1) 0%, rgba(34,35,97,1) 100%);
+  background: linear-gradient(0deg, rgba(156,102,41,1) 0%, rgba(34,35,97,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9c6629",endColorstr="#222361",GradientType=1);
+  /* background: rgb(38,39,88);
   background: -moz-linear-gradient(188deg, rgba(38,39,88,1) 0%, rgba(96,42,113,1) 50%, rgba(234,51,110,1) 100%);
   background: -webkit-linear-gradient(188deg, rgba(38,39,88,1) 0%, rgba(96,42,113,1) 50%, rgba(234,51,110,1) 100%);
   background: linear-gradient(188deg, rgba(38,39,88,1) 0%, rgba(96,42,113,1) 50%, rgba(234,51,110,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#262758",endColorstr="#ea336e",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#262758",endColorstr="#ea336e",GradientType=1); */
 }
 
 .dot,
@@ -917,15 +916,6 @@ a {
   line-height: 200px;
   color: white;
   text-align: center;
-  text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #0fa,
-    0 0 82px #0fa,
-    0 0 92px #0fa,
-    0 0 102px #0fa,
-    0 0 151px #0fa;
 }
 
 .one i,
@@ -934,17 +924,28 @@ a {
 .four i,
 .five i,
 .six i {
-  /* background: hsla( 60, 100%, 50%, 0.4); */
   font-size: 70px;
   color: black;
 }
 
-/* .one  { background: hsla(  0, 100%, 50%, 0.7); }
-.two  { background: hsla( 60, 100%, 50%, 0.7); }
-.three   { background: hsla(120, 100%, 50%, 0.7); }
-.four  { background: hsla(180, 100%, 50%, 0.7); }
-.five   { background: hsla(240, 100%, 50%, 0.7); }
-.six{ background: hsla(300, 100%, 50%, 0.7); } */
+.one { 
+  background: var(--red)
+}
+.two { 
+  background:var(--green); 
+}
+.three { 
+  background:var(--orange); 
+}
+.four {
+  background: var(--green-lt); 
+}
+.five { 
+  background: var(--teal); 
+}
+.six {
+  background: var(--orange); 
+}
 
 .one { 
   transform: rotateY(  0deg) translateZ(100px); 
@@ -1005,6 +1006,72 @@ a {
   background-color: white;
   border-radius: 5px;
 }
+
+.vscode {
+  position: absolute;
+  height: 250px;
+  width: 350px;
+  border: 3px solid black;
+  border-radius: 5px;
+  top: 15px;
+  right: 10px;
+  background-color: #313642;
+}
+
+.terminal {
+  position: absolute;
+  height: 200px;
+  width: 250px;
+  border: 3px solid black;
+  border-radius: 5px;
+  top: 40px;
+  left: 10px;
+  background-color: #313642;
+}
+
+.vscode .bar,
+.terminal .bar {
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 12px;
+  background-color: black;
+}
+
+.vscode .red,
+.terminal .red {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background-color: #e1443e;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+.vscode .yellow,
+.terminal .yellow {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background-color: #e1953e;
+  border-radius: 50%;
+  top: 0;
+  left: 12px;
+}
+
+.vscode .green,
+.terminal .green {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background-color: #1a7227;
+  border-radius: 50%;
+  top: 0;
+  left: 24px;
+}
+
+
 
 /* TABLE */
 
