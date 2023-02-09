@@ -1333,6 +1333,136 @@ a {
 
 /* MEDIA QUERIES */
 
+@media screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .container {
+      height: 100vh;
+      widows: 100vw;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    .asticodes {
+      font-size: 40px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    .wrap {
+      top: 150px;
+      left: 145px;
+    }
+    .base {
+      width: 80px;
+    }
+    .window {
+      display: none;
+    }
+    .clock {
+      width: 120px;
+      height: 120px;
+      left: 10px;
+      top: 200px;
+    }
+    .radio-group {
+      display: none
+    }
+    .laptop {
+      display:none;
+    }
+    .laptop-btm{
+      display: none;
+    }
+    #cup-wrapper {
+      display: none;
+    }
+    .toy {
+      display:none;
+    }
+    .sec-3 {
+      display: none;
+    }
+    .shelf-top {
+      width: 90vw;
+      left:0;
+      top: 200px;
+    }
+    .shelf-2-top {
+      width: 90vw;
+      left:0;
+      top: 375px;
+    }
+    .book-3 {
+      width: 120px;
+      height: 30px;
+      top: 170px;
+      left: 10px;
+    }
+    .book-4 {
+      width: 120px;
+      height: 30px;
+      top: 140px;
+      left: 5px;
+    }
+    .book-3 .circle, 
+    .book-4 .circle {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      top: 12px;
+      left: 7px;
+    }
+    .book-3 .link-wrapper, 
+    .book-4 .link-wrapper {
+      width: 90px;
+      height: 23px;
+      top: 4px;
+      left: 25px;
+      font-size: 16px;
+      text-align: center;
+    }
+    .book-1 {
+      width: 20px;
+      height: 120px;
+      top: 80px;
+      left: 260px;
+    }
+    
+    .book-1 .stripe-1 {
+      width: 20px;
+      height: 10px;
+      top: 10px;
+    }
+    
+    .book-1 .stripe-2 {
+      width: 20px;
+      height: 10px;
+      bottom: 10px;
+    }
+    .book-2 {
+      width: 20px;
+      height: 80px;
+      top: 120px;
+      left: 237px;
+      transform: rotate(0deg);
+    }
+    .book-2 .stripe-1 {
+      width: 20px;
+      height: 10px;
+      top: 10px;
+    }
+    
+    .book-2 .stripe-2 {
+      width: 20px;
+      height: 10px;
+      bottom: 10px;
+    }
+    .lower-books {
+      display: none;
+    }
+}
+
 /* break points */
 /* 320px — 480px: Mobile devices.
 481px — 768px: iPads, Tablets.
