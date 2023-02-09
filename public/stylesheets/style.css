@@ -423,7 +423,7 @@ a {
   height: 8rem;
   position: absolute;
   bottom: -22px;
-  left: 25px;
+  left: 40px;
   border: 5px solid var(--tbl-lt);
   border-radius: 50%;
   margin: 50px auto;
@@ -616,11 +616,6 @@ a {
   background: -webkit-linear-gradient(0deg, rgba(156,102,41,1) 0%, rgba(34,35,97,1) 100%);
   background: linear-gradient(0deg, rgba(156,102,41,1) 0%, rgba(34,35,97,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9c6629",endColorstr="#222361",GradientType=1);
-  /* background: rgb(38,39,88);
-  background: -moz-linear-gradient(188deg, rgba(38,39,88,1) 0%, rgba(96,42,113,1) 50%, rgba(234,51,110,1) 100%);
-  background: -webkit-linear-gradient(188deg, rgba(38,39,88,1) 0%, rgba(96,42,113,1) 50%, rgba(234,51,110,1) 100%);
-  background: linear-gradient(188deg, rgba(38,39,88,1) 0%, rgba(96,42,113,1) 50%, rgba(234,51,110,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#262758",endColorstr="#ea336e",GradientType=1); */
 }
 
 .dot,
@@ -635,7 +630,17 @@ a {
 .dot-9,
 .dot-10,
 .dot-11,
-.dot-12 {
+.dot-12,
+.dot-13,
+.dot-14,
+.dot-15,
+.dot-16,
+.dot-17,
+.dot-18,
+.dot-19,
+.dot-20,
+.dot-21,
+.dot-22 {
   width: 8px;
   height: 8px;
   background-color: var(--window);
@@ -799,6 +804,66 @@ a {
   position: absolute;
   right: 400px;
   bottom: 120px;
+}
+
+.dot-13 {
+  position: absolute;
+  right: 60px;
+  bottom: 200px;
+}
+
+.dot-14 {
+  position: absolute;
+  right: 200px;
+  top: 200px;
+}
+
+.dot-15 {
+  position: absolute;
+  right: 180px;
+  top: 200px;
+}
+
+.dot-16 {
+  position: absolute;
+  right: 160px;
+  top: 200px;
+}
+
+.dot-17 {
+  position: absolute;
+  right: 160px;
+  top: 260px;
+}
+
+.dot-18 {
+  position: absolute;
+  right: 180px;
+  top: 260px;
+}
+
+.dot-19 {
+  position: absolute;
+  right: 180px;
+  top: 300px;
+}
+
+.dot-20 {
+  position: absolute;
+  right: 180px;
+  bottom: 360px;
+}
+
+.dot-21 {
+  position: absolute;
+  right: 220px;
+  bottom: 360px;
+}
+
+.dot-22 {
+  position: absolute;
+  left: 80px;
+  top: 500px;
 }
 
 /* buildings */
