@@ -83,7 +83,6 @@ a {
 
 /* shelf 1 container */
 .sec-1 .shelf-container {
-    border: 1px solid red;
     width: 100%;
     height: 33.3%;
     display: flex;
@@ -625,7 +624,6 @@ a {
 /* LINKS in CUBE */
 
 .toy-container {
-    border: 1px solid gold;
     width: 60%;
     height: 100%;
     display: flex;
