@@ -77,7 +77,6 @@ a {
 
 .sec-1 {
     height: 60%;
-    border: 1px solid white;
     display: flex;
     flex-direction: column;
 }
@@ -98,19 +97,16 @@ a {
 }
 
 .things-on-shelf .book-links-container {
-    border: 1px solid green;
     width: 50%;
     height: 100%;
 }
 
 .things-on-shelf .plant-container {
-    border: 1px solid green;
     width: 30%;
     height: 100%;
 }
 
 .things-on-shelf .book-3-and-4-container {
-    border: 1px solid green;
     width: 20%;
     height: 100%;
 }
