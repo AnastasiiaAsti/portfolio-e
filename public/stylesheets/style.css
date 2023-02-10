@@ -1350,29 +1350,41 @@ a {
       left: 10px;
     }
     .wrap {
-      top: 150px;
+      top: 130px;
       left: 145px;
     }
     .base {
       width: 80px;
     }
+    .blade-center {
+      display: none;
+    }
     .window {
       display: none;
     }
     .clock {
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
       left: 10px;
-      top: 200px;
+      top: 180px;
     }
     .radio-group {
       display: none
     }
     .laptop {
-      display:none;
+      width: 85vw;
+      left: 20px;
+      bottom: 0;
+      height: 65%;
+    }
+    .vscode,
+    .terminal {
+      display: none;
     }
     .laptop-btm{
-      display: none;
+      width: 95vw;
+      left:0;
+      bottom: 0;
     }
     #cup-wrapper {
       display: none;
@@ -1384,25 +1396,26 @@ a {
       display: none;
     }
     .shelf-top {
-      width: 90vw;
+      width: 320px;
       left:0;
-      top: 200px;
+      top: 180px;
     }
     .shelf-2-top {
-      width: 90vw;
+      width: 320px;
       left:0;
-      top: 375px;
+      top: 335px;
     }
     .book-3 {
+      background-color: var(--teal);
       width: 120px;
       height: 30px;
-      top: 170px;
+      top: 150px;
       left: 10px;
     }
     .book-4 {
       width: 120px;
       height: 30px;
-      top: 140px;
+      top: 120px;
       left: 5px;
     }
     .book-3 .circle, 
@@ -1425,7 +1438,7 @@ a {
     .book-1 {
       width: 20px;
       height: 120px;
-      top: 80px;
+      top: 60px;
       left: 260px;
     }
     
@@ -1443,7 +1456,7 @@ a {
     .book-2 {
       width: 20px;
       height: 80px;
-      top: 120px;
+      top: 100px;
       left: 237px;
       transform: rotate(0deg);
     }
@@ -1458,8 +1471,44 @@ a {
       height: 10px;
       bottom: 10px;
     }
-    .lower-books {
-      display: none;
+    .lower-books .book-3 {
+      width: 120px;
+      height: 30px;
+      top: 305px;
+      left: 165px;
+    }
+    .lower-books .book-4 {
+      width: 120px;
+      height: 30px;
+      top: 275px;
+      left: 170px;
+    }
+    .lower-books .book-5 {
+      width: 120px;
+      height: 30px;
+      top: 245px;
+      left: 160px;
+    }
+    
+    .lower-books .book-3 .circle, 
+    .lower-books .book-4 .circle,
+    .lower-books .book-5 .circle {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      top: 12px;
+      left: 7px;
+    }
+    
+    .lower-books .book-3 .link-wrapper, 
+    .lower-books .book-4 .link-wrapper,
+    .lower-books .book-5 .link-wrapper {
+      width: 90px;
+      height: 23px;
+      top: 4px;
+      left: 25px;
+      font-size: 16px;
+      text-align: center;
     }
 }
 
