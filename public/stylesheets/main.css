@@ -2,6 +2,7 @@
 
 :root {
     --bg: #141432;
+    --bg-1: #262758;
     --purple-lt: #2A2D71;
     --text: #F6FAE7;
     --tbl: #976638;
@@ -21,10 +22,21 @@
 body {
     height: 100vh;
     color: var(--text);
-    background-color: var(--bg);
+    background-color: var(--bg-1);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 /* LOGO */
+
+.logo {
+    height: 5%;
+}
 
 .asticodes {
     font-family: 'Condiment', cursive;
@@ -59,3 +71,55 @@ body {
         text-shadow: none;
     }    
 }
+
+/* SECTION 1 */
+
+.sec-1 {
+    height: 60%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.shelf-container {
+    border: 1px solid red;
+    width: 100%;
+    height: 33.3%;
+    display: flex;
+}
+
+.shelf-1,
+.shelf-2,
+.shelf-3 {
+    height: 10%;
+    width: 100%;
+    border: 1px solid var(--tbl);
+    background-color: var(--tbl);
+    border-radius: 5px;
+    box-shadow: 0 24px 20px -6px black;
+    align-self: flex-end;
+}
+
+/* END section 1 */
+
+/* SECTION 2 */
+
+.sec-2 {
+    height: 30%;
+    border: 1px solid white;
+}
+
+.laptop-container {
+    border: 1px solid yellow;
+    height: 100%;
+}
+
+/* END section 2 */
+
+/* SECTION 3 */
+
+.sec-3 {
+    display: none;
+}
+
+/* END section 3 */
