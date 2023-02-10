@@ -1512,6 +1512,46 @@ a {
     }
 }
 
+
+@media screen 
+  and (min-device-width: 481px) 
+  and (max-device-width: 768px)
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .container {
+      width: 440px;
+      height: 529px;
+    }
+  }
+
+  @media screen 
+  and (min-device-width: 769px) 
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .container {
+      width: 740px;
+      height: 829px;
+    }
+}
+
+@media screen 
+  and (min-device-width: 1023px) 
+  and (max-device-width: 1280px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .container {
+      width: 1023px;
+      height: 1200px;
+    }
+  }
+
+@media screen 
+  and (min-device-width: 1281px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .container {
+      width: 1281px;
+      height: 1458px;
+    }
+  }
+
 /* break points */
 /* 320px — 480px: Mobile devices.
 481px — 768px: iPads, Tablets.
