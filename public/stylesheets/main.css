@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Condiment&display=swap');
+
+:root {
+    --bg-1: #262758;
+    --purple-lt: #2A2D71;
+    --text: rgb(246, 250, 231);
+    --tbl: rgb(151, 102, 56);
+    --tbl-lt: rgb(182, 140, 83);
+    --green-lt:#abe07a;
+    --green:#25a037;;
+    --orange:#e1953e;
+    --red: #e1443e;
+    --teal: rgb(87, 150, 142);
+    --window: #faf4d0;
+}

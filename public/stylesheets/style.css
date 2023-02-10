@@ -34,6 +34,7 @@ a {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 /* 3 main sections */
@@ -1343,6 +1344,10 @@ a {
       margin: 0 auto;
       overflow: hidden;
     }
+    .sec-1,
+    .sec-2 {
+      height: 50vh;
+    }
     .asticodes {
       font-size: 40px;
       position: absolute;
@@ -1534,7 +1539,7 @@ a {
 }
 
 @media screen 
-  and (min-device-width: 1023px) 
+  and (min-device-width: 1025px) 
   and (max-device-width: 1280px)
   and (-webkit-min-device-pixel-ratio: 1) {
     .container {
@@ -1551,6 +1556,10 @@ a {
       height: 1458px;
     }
   }
+
+
+
+  
 
 /* break points */
 /* 320px — 480px: Mobile devices.
