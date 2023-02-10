@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Condiment&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Condiment&display=swap");
 
 :root {
     --bg: #141432;
     --bg-1: #262758;
-    --purple-lt: #2A2D71;
-    --text: #F6FAE7;
+    --purple-lt: #2a2d71;
+    --text: #f6fae7;
     --tbl: #976638;
-    --tbl-lt: #B68C53;
-    --green-lt:#abe07a;
-    --green:#25a037;;
-    --orange:#e1953e;
+    --tbl-lt: #b68c53;
+    --green-lt: #abe07a;
+    --green: #25a037;
+    --orange: #e1953e;
     --red: #e1443e;
-    --teal: #57968E;
+    --teal: #57968e;
     --window: #faf4d0;
 }
 
@@ -39,37 +39,33 @@ body {
 }
 
 .asticodes {
-    font-family: 'Condiment', cursive;
+    font-family: "Condiment", cursive;
     font-size: 40px;
     color: #fff;
-    text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #0fa,
-    0 0 82px #0fa,
-    0 0 92px #0fa,
-    0 0 102px #0fa,
-    0 0 151px #0fa;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+        0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
     animation: flicker 1.5s infinite alternate;
 }
 
-  /* Flickering animation */
+/* Flickering animation */
 @keyframes flicker {
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-        text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px #0fa,
-        0 0 80px #0fa,
-        0 0 90px #0fa,
-        0 0 100px #0fa,
-        0 0 150px #0fa;
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
+            0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
     }
-    20%, 24%, 55% {        
+
+    20%,
+    24%,
+    55% {
         text-shadow: none;
-    }    
+    }
 }
 
 /* SECTION 1 */
@@ -81,12 +77,258 @@ body {
     flex-direction: column;
 }
 
-.shelf-container {
+/* shelf 1 container */
+.sec-1 .shelf-container {
     border: 1px solid red;
     width: 100%;
     height: 33.3%;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
+
+.sec-1 .shelf-container .things-on-shelf {
+    height: 90%;
+    display: flex;
+}
+
+.things-on-shelf .book-links-container,
+.things-on-shelf .plant-container,
+.things-on-shelf .book-3-and-4-container {
+    border: 1px solid green;
+    width: 33%;
+    height: 100%;
+}
+
+/* #1 */
+
+.things-on-shelf .book-links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* END #1 */
+
+/* #2 with plant*/
+.things-on-shelf .plant-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* PLANT */
+
+.base {
+    position: relative;
+    display: block;
+    width: 110px;
+}
+
+.flowerpot {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    background-image: linear-gradient(50deg,
+            #d1bb94 20px,
+            #d1bb94 21px,
+            transparent 20px),
+        linear-gradient(310deg, #d1bb94 20px, #d1bb94 21px, #d1bb94 100%);
+}
+
+.flowerpot:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    left: 30px;
+    top: -5px;
+    width: 60px;
+    height: 90px;
+    background: linear-gradient(285deg, #d1bb94 20px, #d6c8a5 21px, #d6c8a5 100%);
+    transform: rotate(50deg);
+}
+
+.blade {
+    position: absolute;
+    bottom: 40px;
+    overflow: hidden;
+    transform-origin: 50% 100%;
+    z-index: -1;
+}
+
+.blade:before,
+.blade:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    border-top: 0;
+    border-radius: 50%;
+}
+
+.blade-left-s {
+    height: 60px;
+    width: 50px;
+    left: -15px;
+    animation: wave 3s infinite ease-in-out;
+}
+
+.blade-left-s:before {
+    right: 0;
+    height: 50px;
+    width: 90px;
+    border-right: 20px solid var(--green-lt);
+}
+
+.blade-left-s:after {
+    top: 1px;
+    right: 6px;
+    height: 120px;
+    width: 90px;
+    transform: rotateZ(15deg);
+    border-right: 18px solid var(--green-lt);
+}
+
+.blade-left-l {
+    height: 100px;
+    width: 80px;
+    left: -30px;
+    animation: wave2 4s infinite ease-in-out;
+}
+
+.blade-left-l:before {
+    right: 2px;
+    height: 190px;
+    width: 160px;
+    border-right: 25px solid #aad670;
+    transform: rotateZ(20deg);
+}
+
+.blade-left-l:after {
+    right: 7px;
+    height: 190px;
+    width: 160px;
+    border-right: 18px solid #abe07a;
+    transform: rotateZ(25deg);
+}
+
+.blade-right-s {
+    height: 50px;
+    width: 80px;
+    right: -35px;
+    animation: wave2 3.2s -0.5s infinite ease-in-out;
+}
+
+.blade-right-s:before {
+    left: 0;
+    height: 190px;
+    width: 100px;
+    border-left: 22px solid #aad670;
+}
+
+.blade-right-s:after {
+    left: 15px;
+    height: 190px;
+    width: 100px;
+    border-left: 13px solid #abe07a;
+    transform: rotateZ(-10deg);
+}
+
+.blade-right-l {
+    height: 75px;
+    width: 80px;
+    right: -22px;
+    animation: wave 3.2s -1s infinite ease-in-out;
+}
+
+.blade-right-l:before {
+    left: 0;
+    height: 190px;
+    width: 160px;
+    border-left: 26px solid #aad670;
+}
+
+.blade-right-l:after {
+    left: 6px;
+    height: 190px;
+    width: 160px;
+    border-left: 20px solid #abe07a;
+    transform: rotateZ(-10deg);
+}
+
+.blade-center {
+    height: 120px;
+    width: 90px;
+    left: -15px;
+    animation: wave 3s -1.2s infinite ease-in-out;
+}
+
+.blade-center:before {
+    right: 10px;
+    height: 240px;
+    width: 140px;
+    border-right: 28px solid #aad670;
+    transform: rotateZ(15deg);
+}
+
+.blade-center:after {
+    right: 15px;
+    height: 240px;
+    width: 140px;
+    border-right: 17px solid #abe07a;
+    transform: rotateZ(15deg);
+}
+
+@keyframes wave {
+    0% {
+        transform: rotateZ(3deg) translateZ(-1px);
+    }
+
+    25% {
+        transform: rotateZ(-4deg) translateZ(-1px);
+    }
+
+    50% {
+        transform: rotateZ(2deg) translateZ(-1px);
+    }
+
+    75% {
+        transform: rotateZ(-6deg) translateZ(-1px);
+    }
+
+    100% {
+        transform: rotateZ(3deg) translateZ(-1px);
+    }
+}
+
+@keyframes wave2 {
+    0% {
+        transform: rotateZ(0deg) translateZ(-1px);
+    }
+
+    25% {
+        transform: rotateZ(-3deg) translateZ(-1px);
+    }
+
+    50% {
+        transform: rotateZ(3deg) translateZ(-1px);
+    }
+
+    75% {
+        transform: rotateZ(-1deg) translateZ(-1px);
+    }
+
+    100% {
+        transform: rotateZ(0deg) translateZ(-1px);
+    }
+}
+
+/* END #2 */
+
+/* #3 with books*/
+/* END #3 */
 
 .shelf-1,
 .shelf-2,
@@ -97,8 +339,9 @@ body {
     background-color: var(--tbl);
     border-radius: 5px;
     box-shadow: 0 24px 20px -6px black;
-    align-self: flex-end;
 }
+
+/* END shelf 1 container */
 
 /* END section 1 */
 
