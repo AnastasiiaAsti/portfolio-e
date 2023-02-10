@@ -13,6 +13,7 @@
     --red: #e1443e;
     --teal: #57968e;
     --window: #faf4d0;
+    --laptop: #727272;
 }
 
 * {
@@ -712,8 +713,6 @@ a {
     transform: rotateY(-90deg) translateZ(50px);
 }
 
-
-
 /* END shelf 3 */
 
 /* END section 1 */
@@ -728,7 +727,79 @@ a {
 .laptop-container {
     border: 1px solid yellow;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.laptop {
+    width: 86%;
+    height: 92%;
+    border: 10px solid black;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: var(--text);
+}
+
+.laptop-btm {
+    width: 100%;
+    height: 8%;
+    background-color: var(--laptop);
+    border-radius: 5px;
+    box-shadow: 0 24px 20px -6px black;
+}
+
+.vscode {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #313642;
+    display: none;
+}
+
+.terminal {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #313642;
+    width: 80%;
+    height: 75%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.vscode .bar,
+.terminal .bar {
+    width: 100%;
+    height: 5%;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.vscode .red,
+.terminal .red {
+    height: 5px;
+    width: 5px;
+    background-color: #e1443e;
+    border-radius: 50%;
+}
+
+.vscode .yellow,
+.terminal .yellow {
+    height: 5px;
+    width: 5px;
+    background-color: #e1953e;
+    border-radius: 50%;
+}
+
+.vscode .green,
+.terminal .green {
+    height: 5px;
+    width: 5px;
+    background-color: #1a7227;
+    border-radius: 50%;
+}
+
 
 /* END section 2 */
 
