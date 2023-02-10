@@ -93,10 +93,15 @@ body {
 }
 
 .things-on-shelf .book-links-container,
-.things-on-shelf .plant-container,
+.things-on-shelf .plant-container {
+    border: 1px solid green;
+    width: 40%;
+    height: 100%;
+}
+
 .things-on-shelf .book-3-and-4-container {
     border: 1px solid green;
-    width: 33%;
+    width: 20%;
     height: 100%;
 }
 
@@ -328,6 +333,63 @@ body {
 /* END #2 */
 
 /* #3 with books*/
+
+.things-on-shelf .book-3-and-4-container {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.book-3,
+.book-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book-3 {
+    background-color: #25a037;
+    width: 20%;
+    height: 60%;
+    margin-right: 15px;
+    transform: rotate(20deg);
+}
+
+.book-3 .stripe-1 {
+    background-color: #1a7227;
+    width: 100%;
+    height: 8%;
+    margin-top: 5px;
+}
+
+.book-3 .stripe-2 {
+    background-color: #1a7227;
+    width: 100%;
+    height: 8%;
+    margin-bottom: 5px;
+}
+
+.book-4 {
+    background-color: var(--orange);
+    width: 30%;
+    height: 90%;
+}
+
+.book-4 .stripe-1 {
+    background-color: var(--tbl);
+    width: 100%;
+    height: 8%;
+    margin-top: 5px;
+}
+
+.book-4 .stripe-2 {
+    background-color: var(--tbl);
+    width: 100%;
+    height: 8%;
+    margin-bottom: 5px;
+}
+
 /* END #3 */
 
 .shelf-1,
