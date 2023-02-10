@@ -1,15 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Condiment&display=swap');
 
 :root {
-    --bg-1: #262758;
+    --bg: #141432;
     --purple-lt: #2A2D71;
-    --text: rgb(246, 250, 231);
-    --tbl: rgb(151, 102, 56);
-    --tbl-lt: rgb(182, 140, 83);
+    --text: #F6FAE7;
+    --tbl: #976638;
+    --tbl-lt: #B68C53;
     --green-lt:#abe07a;
     --green:#25a037;;
     --orange:#e1953e;
     --red: #e1443e;
-    --teal: rgb(87, 150, 142);
+    --teal: #57968E;
     --window: #faf4d0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+/* LOGO */
+
+.asticodes {
+    font-family: 'Condiment', cursive;
+    font-size: 40px;
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+    animation: flicker 1.5s infinite alternate;
+}
+
+  /* Flickering animation */
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    }
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
 }
