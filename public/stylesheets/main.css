@@ -149,6 +149,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border: 1px solid black;
 }
 
 
@@ -191,6 +192,7 @@ a {
     position: relative;
     display: block;
     width: 90%;
+    border: 1px solid black;
 }
 
 .flowerpot {
@@ -407,6 +409,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border: 1px solid black;
 }
 
 .book-3 {
@@ -459,7 +462,7 @@ a {
 .shelf-3 {
     height: 10%;
     width: 100%;
-    border: 1px solid var(--tbl);
+    border: 1px solid black;
     background-color: var(--tbl);
     border-radius: 5px;
     box-shadow: 0 24px 20px -6px black;
@@ -804,6 +807,8 @@ input[type="radio"]:checked+label span i {
     background-color: var(--laptop);
     border-radius: 5px;
     box-shadow: 0 24px 20px -6px black;
+    border: 1px solid black;
+
 }
 
 .vscode {
