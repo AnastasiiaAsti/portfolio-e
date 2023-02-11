@@ -621,8 +621,59 @@ a {
     width: 20%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 2px;
+
 }
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]+label {
+    font-size: 20px;
+}
+
+.radio-group span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    text-align: center;
+}
+
+.radio-group i {
+    opacity: 0;
+    transition: all .3s ease;
+    color: black;
+    margin-top: 2px;
+}
+
+#color-1+label span {
+    background-color: var(--teal);
+}
+
+#color-2+label span {
+    background-color: var(--green-lt);
+}
+
+#color-3+label span {
+    background-color: var(--orange);
+}
+
+#color-4+label span {
+    background-color: var(--red);
+}
+
+input[type="radio"]:checked+label span i {
+    opacity: 1;
+}
+
 
 /* LINKS in CUBE */
 
@@ -723,11 +774,9 @@ a {
 
 .sec-2 {
     height: 30%;
-    border: 1px solid white;
 }
 
 .laptop-container {
-    border: 1px solid yellow;
     height: 100%;
     display: flex;
     flex-direction: column;

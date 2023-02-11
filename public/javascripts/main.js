@@ -46,7 +46,7 @@ radioGroup.addEventListener('change', changeSide);
 // terminal emulator
 
 const textDisplay = document.getElementById('text')
-const phrases = ['Hey!','Welcome to my space.', 'My name is Asti.', 'I love to code.', 'And teach.', 'Thanks for stopping by.']
+const phrases = ['hey!','welcome to my space.', 'my name is Asti.', 'I love to code.', 'and teach.', 'thanks for stopping by.']
 let i = 0
 let j = 0 
 let currentPhrase = []
