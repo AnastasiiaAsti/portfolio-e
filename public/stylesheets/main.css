@@ -38,7 +38,12 @@ body {
 a {
     text-decoration: none;
     font-size: 20px;
+    color: black;
 }
+
+/* a:hover {
+    font-weight: bold;
+} */
 
 /* LOGO */
 
@@ -430,6 +435,7 @@ a {
     background-color: var(--orange);
     width: 30%;
     height: 90%;
+    margin-right: 5px;
 }
 
 .book-4 .stripe-1 {
