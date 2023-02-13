@@ -911,6 +911,52 @@ input[type="radio"]:checked+label span i {
     height: 90%;
     border: 8px solid var(--tbl);
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.portfolio-sec-1 {
+    width: 100%;
+    height: 20%;
+    border: 1px solid purple;
+    display: flex;
+
+}
+
+
+.portfolio-sec-2 {
+    width: 100%;
+    height: 40%;
+    border: 1px solid purple;
+}
+
+
+.portfolio-sec-3 {
+    width: 100%;
+    height: 40%;
+    border: 1px solid purple;
+    display: flex;
+}
+
+
+.sticky {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+    margin: 8%;
+    border: 1px solid rgba(0, 0, 0, .25);
+}
+
+.portfolio-sec-1 .sticky {
+    width: 50%;
+    height: 80%;
+}
+
+.portfolio-sec-3 .sticky {
+    width: 33%;
+    height: 33%;
 }
 
 /* END container 2 */
