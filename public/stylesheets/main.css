@@ -898,3 +898,19 @@ input[type="radio"]:checked+label span i {
 }
 
 /* END section 3 */
+
+/* CONTAINER 2 */
+
+.space {
+    height: 10%;
+}
+
+.board {
+    background-color: var(--tbl-lt);
+    width: 100%;
+    height: 90%;
+    border: 8px solid var(--tbl);
+    border-radius: 5px;
+}
+
+/* END container 2 */
