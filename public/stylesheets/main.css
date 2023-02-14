@@ -1105,6 +1105,18 @@ img {
     transform: rotate(-5deg);
 }
 
+.sticky-description {
+    background-color: var(--board-yellow);
+    width: 60%;
+    height: 25%;
+    margin: 20px 0 0 20%;
+    transform: rotate(-18deg);
+    text-align: center;
+}
+
+.img-container {
+    border: 15px solid var(--text);
+}
 
 .prev,
 .next {
