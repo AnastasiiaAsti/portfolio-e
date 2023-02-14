@@ -470,38 +470,99 @@
   </div>
   <div class="container">
     <div id="portfolio-container" class="board">
-      <div class="slider fade">
-        <!-- slider -->
-        <div class="portfolio-sec-1">
-          <div class="sticky sticky-name">
-            <p>Project Name</p>
+      <% projects.forEach(function(project) { %>
+        <div class="slider fade">
+          <!-- slider -->
+          <div class="p-sec-1">
+            <div class="p-sec-1-1">
+              <div class="purple-accent"></div>
+              <div class="blue-lines">
+                <div class="line">
+                  <div class="blue-dot"></div>
+                  <div class="blue-line long"></div>
+                </div>
+                <div class="line">
+                  <div class="blue-dot"></div>
+                  <div class="blue-line short"></div>
+                </div>
+                <div class="line">
+                  <div class="blue-dot"></div>
+                  <div class="blue-line long"></div>
+                </div>
+                <div class="line">
+                  <div class="blue-dot"></div>
+                  <div class="blue-line med"></div>
+                </div>
+                <div class="line">
+                  <div class="blue-dot"></div>
+                  <div class="blue-line short"></div>
+                </div>
+              </div>
+              <div class="sticky sticky-name">
+                <p>
+                  <%=project.name%>
+                </p>
+              </div>
+            </div>
+            <div class="p-sec-1-2">
+              <div class="purple-accent"></div>
+              <div class="sticky sticky-link">
+                <a href="<%=project.link%>"><i class="fa-solid fa-link"></i></i></a>
+              </div>
+              <div class="sticky sticky-git">
+                <a href="<%=project.gitLink%>"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="sticky sticky-links">
-            <a href=""></a>
-            <a href=""></a>
+          <div class="p-sec-2">
+            <div class="p-sec-2-1">
+              <div class="purple-accent"></div>
+              <div class="sticky sticky-tech-used-1">
+                <% project.techUsed.slice(0,3).forEach(function(t) { %>
+                  <ul>
+                    <li>
+                      <%=t%>
+                    </li>
+                  </ul>
+                  <% }); %>
+              </div>
+              <div class="sticky sticky-tech-used-2">
+                <% project.techUsed.slice(3,7).forEach(function(t) { %>
+                  <ul>
+                    <li>
+                      <%=t%>
+                    </li>
+                  </ul>
+                  <% }); %>
+              </div>
+              <div class="sticky sticky-tech-used-3">
+                <% project.techUsed.slice(7).forEach(function(t) { %>
+                  <ul>
+                    <li>
+                      <%=t%>
+                    </li>
+                  </ul>
+                  <% }); %>
+              </div>
+            </div>
+            <div class="p-sec-2-2">
+              <div class="purple-accent"></div>
+              <div class="img-container">
+                <img src="<%=project.photosURLs%>" alt="screenshot of the project">
+              </div>
+              <div class="sticky sticky-description">
+                <a href="">Click for details</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="portfolio-sec-2">
-          <img src="" alt="">
-        </div>
-        <div class="portfolio-sec-3">
-          <div class="sticky sticky-tech-used">
-            <ul>
-              <li>tech</li>
-              <li>used</li>
-              <li>example</li>
-            </ul>
-          </div>
-          <div class="sticky sticky-description">
-            <p>Description</p>
-          </div>
-        </div>
-        <!-- slider END -->
-      </div>
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
+
+          <!-- slider END -->
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <% }); %>
     </div>
     <div class="space"></div>
   </div>
