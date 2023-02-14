@@ -1177,6 +1177,7 @@ img {
     width: 50%;
     margin-left: 20%;
     margin-bottom: 20%;
+    text-align: center;
 }
 
 .sticky-name:after {
@@ -1194,11 +1195,12 @@ img {
 .sticky-link,
 .sticky-git {
     background-color: var(--board-green);
-    color: black;
     width: 50%;
-    margin-left: 20%;
-    margin-bottom: 20%;
+    height: 25%;
+    margin: 20px 0 0 20%;
+    transform: rotate(-18deg);
     text-align: center;
+    padding-top: 10%;
 }
 
 .sticky-link i,
@@ -1212,17 +1214,8 @@ img {
 
 .sticky-link {
     transform: rotate(20deg);
-    margin-top: 20%;
-
 }
 
-.sticky-link:after,
-.sticky-git:after {
-    content: '';
-    display: block;
-    padding-top: 60%;
-    text-align: center;
-}
 
 .p-sec-2-1 {
     border-top: 2px solid var(--board-purple);
@@ -1262,6 +1255,7 @@ img {
     margin: 20px 0 0 20%;
     transform: rotate(-18deg);
     text-align: center;
+    padding-top: 10%;
 }
 
 .img-container {
