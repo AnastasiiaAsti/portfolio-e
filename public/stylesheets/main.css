@@ -951,6 +951,7 @@ img {
     border-radius: 10px;
     margin-left: 20%;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .p-sec-1,
@@ -1056,7 +1057,7 @@ img {
 }
 
 .sticky-git {
-    transform: rotate(-20deg);
+    transform: rotate(-5deg);
 }
 
 .sticky-link {
@@ -1076,12 +1077,34 @@ img {
 .p-sec-2-1 {
     border-top: 2px solid var(--board-purple);
     border-right: 2px solid var(--board-purple);
+
 }
 
 .p-sec-2-2 {
     border-left: 2px solid var(--board-purple);
     border-top: 2px solid var(--board-purple);
 }
+
+
+.sticky-tech-used-1,
+.sticky-tech-used-2,
+.sticky-tech-used-3 {
+    background-color: var(--board-pink);
+    color: black;
+    width: 60%;
+    height: 25%;
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+
+.sticky-tech-used-2 {
+    transform: rotate(5deg);
+}
+
+.sticky-tech-used-3 {
+    transform: rotate(-5deg);
+}
+
 
 .prev,
 .next {
