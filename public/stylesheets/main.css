@@ -934,6 +934,92 @@ input[type="radio"]:checked+label span i {
 
 }
 
+
+/* skills container */
+
+
+.skills-sec-1,
+.skills-sec-2 {
+    width: 50%;
+    height: 100%;
+}
+
+.skills-sec-2 {
+    border-left: 2px solid var(--board-purple);
+}
+
+.skills-sec-1-1 {
+    border-right: 2px solid var(--board-purple);
+    border-bottom: 2px solid var(--board-purple);
+    height: 50%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.purple-accent-top {
+    width: 60%;
+    height: 5%;
+    background-color: var(--board-purple);
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-bottom: 20px;
+}
+
+.blue-box {
+    height: 60%;
+    width: 96%;
+    border: 2px solid var(--board-blue);
+    margin-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blue-box-1,
+.blue-box-2,
+.blue-box-3,
+.blue-box-4 {
+    width: 50%;
+    border: 2px solid var(--board-blue);
+}
+
+.blue-box-1,
+.blue-box-2 {
+    height: 20%;
+}
+
+.blue-box-3,
+.blue-box-4 {
+    height: 80%;
+}
+
+.blue-box-4 .line {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.blue-box-4 .line .blue-line {
+    margin: 5%;
+}
+
+.blue-box-1 .line,
+.blue-box-2 .line,
+.blue-box-3 .line {
+    display: flex;
+    margin-top: 10%;
+}
+
+
+.skills-sec-1-2 {
+    border-top: 2px solid var(--board-purple);
+    border-right: 2px solid var(--board-purple);
+    height: 50%;
+    padding-top: 10px;
+}
+
+/* END skills container */
+
 img {
     width: 100%;
     height: 100%;
@@ -1159,33 +1245,3 @@ img {
         opacity: 1
     }
 }
-
-
-/* 
-}
-
-.portfolio-sec-1 .sticky {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8%;
-}
-
-.portfolio-sec-1 .sticky a {
-    margin: 5%;
-}
-
-.sticky-name {
-    transform: rotate(-3.5deg);
-    -webkit-transform: rotate(-3.5deg);
-    -moz-transform: rotate(-3.5deg);
-    background-color: var(--green-lt);
-    color: black;
-}
-
-.portfolio-sec-3 .sticky {
-    width: 33%;
-    height: 33%;
-} */
-
-/* END container 2 */
