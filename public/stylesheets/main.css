@@ -55,6 +55,11 @@ a {
     font-weight: bold;
 }
 
+li {
+    font-size: 10px;
+    line-height: 1.3px;
+}
+
 /* a:hover {
     font-weight: bold;
 } */
@@ -1045,6 +1050,11 @@ img {
     text-align: center;
 }
 
+.sticky-link i,
+.sticky-git i {
+    font-size: 40px;
+}
+
 .sticky-git {
     transform: rotate(-20deg);
 }
@@ -1059,7 +1069,7 @@ img {
 .sticky-git:after {
     content: '';
     display: block;
-    padding-top: 80%;
+    padding-top: 60%;
     text-align: center;
 }
 
