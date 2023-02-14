@@ -973,6 +973,17 @@ input[type="radio"]:checked+label span i {
     margin-left: 2%;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+}
+
+.sticky-single {
+    background-color: var(--board-yellow);
+    width: 45%;
+    color: black;
+    text-align: center;
+    position: absolute;
+    bottom: -10%;
+    right: 0;
 }
 
 .blue-box-1,
@@ -1016,6 +1027,59 @@ input[type="radio"]:checked+label span i {
     border-right: 2px solid var(--board-purple);
     height: 50%;
     padding-top: 10px;
+}
+
+.skills-sec-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-sec-2 .line {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.notes {
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.notes .green,
+.notes-1 .green,
+.notes-2 .green {
+    background-color: var(--board-green);
+    width: 45%;
+    height: 25%;
+}
+
+.notes .pink,
+.notes-1 .pink,
+.notes-2 .pink {
+    background-color: var(--board-pink);
+    width: 45%;
+    height: 25%;
+}
+
+.notes .yellow,
+.notes-1 .yellow,
+.notes-2 .yellow {
+    background-color: var(--board-yellow);
+    width: 45%;
+    height: 25%;
+}
+
+.notes-1,
+.notes-2 {
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 /* END skills container */
